@@ -1,0 +1,99 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    background-color: black;
+    max-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:   rgb(255, 166, 0);
+    height: 10vh;
+    position: relative;
+    flex-wrap: wrap;
+    flex: 1;
+    padding: 20px;
+    margin: 20px;
+    font-family: sans-serif;
+    font-size: 50px;
+
+}
+
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ul-navbar {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(255, 166, 0);
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.li-navbar {
+    list-style-type: none;
+    margin: 100px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.li-navbar:hover {
+    display: flex;
+    background-color: rgb(255, 0, 0);
+    transition: 0.10s;
+    justify-content: center;
+    align-items: center;
+    animation: ease-in-out;
+    animation-delay: 0.10s;
+    margin: 4px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: black 10px 20px 30px;
+    height: 50px;
+    width: 300px;
+}
+
+.side {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 80vh;
+    width: 400px;
+}
+
+.sky {
+    width: 98%;
+    height: 98%;
+}
+
+.content {
+    background-color: rgb(255, 0, 0);
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    position: relative;
+    width: 900px;
+    margin: 20px;
+    font-family: sans-serif;
+    color: white;
+}
+
