@@ -1,134 +1,162 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(87, 79, 79);
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 24px;
-    display: flex;
-    flex-direction: column;
+  background: url(8351171.gif);
+  background-repeat: no-repeat;
+  background-size: 100% -30%;
 }
 
-header{
-    background-color: rgb(196, 180, 41);
-    padding: 2em 0 2em 0;
-    color: white;
-    font-size: 30px;
-    margin: 5px;
+nav {
+  background-color: rgb(238, 220, 220);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
 }
 
-.main {
-    display: flex;
-    flex: 1;
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav div img {
+  width: 50px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Segoe UI", sans-serif;
+  color: #000000;
+  font-weight: 600;
+  padding: 8px 0;
+  transition: all;
+  transition-duration: 300ms;
+  border-bottom: 1px solid #ff0000;
+}
+
+nav ul li a:hover {
+  color: orangered;
+  border-bottom: 1px solid orangered;
+}
+
+.menu-icon {
+  /* background-color: tomato; */
+  font-size: 28px;
+  display: none;
 }
 
 main {
-    background-color: rgb(0, 0, 0);
-    padding: 3em 0 3em 0;
-    flex: 5 5 150px;
-    width: auto;
-    margin: 5px;
-    border-style:solid;
-    border-radius: 5px;
-    border-width: 1px;
-    border-color: rgb(255, 255, 255);
-    color: white;
-}
-
-.sidebar {
-    background-color: rgb(255, 0, 0);
-    padding: 3em 0 3em 0;
-    flex: 1 1 100px;
-    margin: 5px;
-    border-style:solid;
-    border-width: 2px;
-    border-color: white;
+  padding-top: 7rem;
 }
 
 footer {
-    background: #111;
-    height: auto;
-    padding-top: 40px;
-    color: white;
-    width: 100%;
-    margin-top: 5px;
+  background: #111;
+  padding-top: 40px;
+  color: white;
+  width: 100%;
+  margin-top: 100vh;
+  font-family: sans-serif;
 }
 
 .footer {
-    display: flex;ETS squad gabut test bla bla bla uiehruiheiufhrshgeh
-    ETS
-    Squad Game Yang Bagus dan Banyak Proplayer yang bisa kalian t
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
+  display: flex;ETS squad gabut test bla bla bla uiehruiheiufhrshgeh
+  ETS
+  Squad Game Yang Bagus dan Banyak Proplayer yang bisa kalian t
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
 }
 
 .footer-content h3{
-    font-size: 1.8rem;
-    font-weight: 400;
-    text-transform: capitalize;
-    line-height: 3rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
 }
 
 .footer-content p{
-    max-width: 500px;
-    margin: 10px auto;
-    line-height: 28px;
-    font-size: 14px;
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
 }
 
 .social {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0 3rem 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
 }
 
 .social li{
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 .social a{
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 .social a i{
-    font-size: 1.1rem;
-    transition: color .4s ease;
+  font-size: 1.1rem;
+  transition: color .4s ease;
 }
 
 .social a:hover i{
-    color: aqua;
+  color: aqua;
 }
 
 .footer-bawah{
-    background: #000;
-    padding: 20px 0;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 50px;
+  background: #000;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 50px;
 }
 
 .footer-bawah p{
-    font-size: 14px;
-    word-spacing: 2px;
-    text-transform: capitalize;
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
 }
 
 .footer-bawah span{
-    text-transform: uppercase;
-    opacity: .4;
-    font-weight: 200;
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
 }
 
-@media all and (max-width: 550px){
-    .main {
-        flex-direction: column;
-    }
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li:last-of-type {
+    padding-bottom: 8px;
+  }
+
+  nav ul.hidden {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+    align-items: center;
+  }
 }
