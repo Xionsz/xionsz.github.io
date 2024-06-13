@@ -1,99 +1,134 @@
-*,
-html {
+*{
     margin: 0;
-    padding: 0;
+    box-sizing: border-box;
 }
 
-.body {
-    background-color: black;
-    max-height: 100vh;
-    margin: 0;
-    padding: 0;
-}
-
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:   rgb(255, 166, 0);
-    height: 10vh;
-    position: relative;
-    flex-wrap: wrap;
-    flex: 1;
-    padding: 20px;
-    margin: 20px;
+body {
+    background-color: rgb(87, 79, 79);
+    text-align: center;
     font-family: sans-serif;
-    font-size: 50px;
-
-}
-
-
-.row {
+    font-size: 24px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.ul-navbar {
-    margin: 10px;
-    padding: 10px;
-    background-color: rgb(255, 166, 0);
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-}
-
-.li-navbar {
-    list-style-type: none;
-    margin: 100px;
-    font-family: sans-serif;
-    font-size: 20px;
+header{
+    background-color: rgb(196, 180, 41);
+    padding: 2em 0 2em 0;
     color: white;
+    font-size: 30px;
+    margin: 5px;
 }
 
-.li-navbar:hover {
+.main {
     display: flex;
-    background-color: rgb(255, 0, 0);
-    transition: 0.10s;
-    justify-content: center;
-    align-items: center;
-    animation: ease-in-out;
-    animation-delay: 0.10s;
-    margin: 4px;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: black 10px 20px 30px;
-    height: 50px;
-    width: 300px;
+    flex: 1;
 }
 
-.side {
+main {
     background-color: rgb(0, 0, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 80vh;
-    width: 400px;
-}
-
-.sky {
-    width: 98%;
-    height: 98%;
-}
-
-.content {
-    background-color: rgb(255, 0, 0);
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    position: relative;
-    width: 900px;
-    margin: 20px;
-    font-family: sans-serif;
+    padding: 3em 0 3em 0;
+    flex: 5 5 150px;
+    width: auto;
+    margin: 5px;
+    border-style:solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
     color: white;
 }
 
+.sidebar {
+    background-color: rgb(255, 0, 0);
+    padding: 3em 0 3em 0;
+    flex: 1 1 100px;
+    margin: 5px;
+    border-style:solid;
+    border-width: 2px;
+    border-color: white;
+}
+
+footer {
+    background: #111;
+    height: auto;
+    padding-top: 40px;
+    color: white;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.footer {
+    display: flex;ETS squad gabut test bla bla bla uiehruiheiufhrshgeh
+    ETS
+    Squad Game Yang Bagus dan Banyak Proplayer yang bisa kalian t
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.social {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.social li{
+    margin: 0 10px;
+}
+
+.social a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.social a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.social a:hover i{
+    color: aqua;
+}
+
+.footer-bawah{
+    background: #000;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.footer-bawah p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bawah span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+@media all and (max-width: 550px){
+    .main {
+        flex-direction: column;
+    }
+}
